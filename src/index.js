@@ -105,7 +105,7 @@ export default class ReactConfirmAlert extends Component {
               {childrenElement()}
               <div className='react-confirm-alert-button-group'>
                 {buttons.map((button, i) => (
-                  <button key={i} onClick={() => this.handleClickButton(button)}>
+                  <button className={button.className} key={i} onClick={() => this.handleClickButton(button)}>
                     {button.label}
                   </button>
                 ))}
